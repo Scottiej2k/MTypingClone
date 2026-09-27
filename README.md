@@ -6,6 +6,10 @@ The core mechanic is the same as the original. Letter blocks line up along the p
 
 ## Play it
 
+**Online:** https://scottiej2k.github.io/MTypingClone/
+
+**Locally:**
+
 ```bash
 npm install
 npm run dev       # start the game at http://localhost:5173
@@ -13,7 +17,13 @@ npm run build     # type-check and build static files into dist/
 npm test          # run the unit tests
 ```
 
-The build is fully static and uses relative paths, so you can host `dist/` anywhere, including GitHub Pages or any static file server.
+The build is fully static and uses relative paths, so `dist/` can be hosted on any static file server.
+
+### Deploying to GitHub Pages
+
+`.github/workflows/deploy.yml` tests, builds and publishes the game every time `main` changes. You can also start it by hand from the **Actions** tab ("Deploy to GitHub Pages" → **Run workflow**).
+
+One-time setup: in the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
 
 ## What's inside
 
